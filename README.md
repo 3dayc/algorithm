@@ -1,4 +1,4 @@
-# Algorithm Study
+# algorithm
 #### 기본문제
 + [x] 세 수 중 최솟값
 + [ ] 삼각형 판별하기
