@@ -6,14 +6,14 @@
   <body>
     <script>
       function solution(a, b, c){
-        let answer="YES";
+        let answer='YES';
         let tot=a+b+c;
         let max;
 
         if(a > b) max=a;
         else max=b;
         if(c > max) max=c;
-        if(max < (tot-max)) answer="NO";
+        if(max < (tot-max)) answer='NO';
 
         return answer;
       }
