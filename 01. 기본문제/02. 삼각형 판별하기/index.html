@@ -1,21 +1,29 @@
-<html>
+<!DOCTYPE html>
+<html lang="ko">
   <head>
     <meta charset="UTF-8">
     <title>출력결과</title>
   </head>
   <body>
     <script>
-      function solution(a, b, c){
-        let answer='YES';
-        let tot=a+b+c;
-        let max;
+      // function solution(a, b, c) {
+      //   let answer='YES';
+      //   let tot=a+b+c;
+      //   let max;
 
-        if(a > b) max=a;
-        else max=b;
-        if(c > max) max=c;
-        if(max < (tot-max)) answer='NO';
+      //   if(a > b) max=a;
+      //   else max=b;
+      //   if(c > max) max=c;
+      //   if(max < (tot-max)) answer='NO';
 
-        return answer;
+      //   return answer;
+      // }
+
+      function solution(a, b, c) {
+        const tot = a + b + c;
+        const max = Math.max(a, b, c);
+        
+        return max < tot - max ? 'NO' : 'YES';
       }
 
       console.log(solution(13, 25, 10));

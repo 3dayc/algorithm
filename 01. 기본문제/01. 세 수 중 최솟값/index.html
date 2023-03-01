@@ -1,16 +1,23 @@
-<html>
+<!DOCTYPE html>
+<html lang="ko">
   <head>
     <meta charset="UTF-8">
     <title>출력결과</title>
   </head>
   <body>
     <script>
-      function solution(a, b, c){
+      function solution(a, b, c) {
         let answer;
 
-        if(a < b) answer=a;
-        else answer=b;
-        if(c < answer) answer=c;
+        if (a < b) {
+          answer = a;
+        } else {
+          answer = b;
+        }
+
+        if (c < answer) {
+          answer = c;
+        }
 
         return answer;
       }
